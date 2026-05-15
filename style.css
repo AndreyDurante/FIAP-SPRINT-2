@@ -130,13 +130,12 @@ header {
     /* justify-content: center; */
     align-items: flex-start;
     /* background-color: red; */
-    padding-top: 20px;
-    padding-left: 50px;
+    padding: 55px 0 0 50px;
 }
 
 .home-txt{
     width: 50%;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 .home-img {
     width: 50%;
@@ -145,10 +144,45 @@ header {
 .h1-home{
     font-size: 180px;
     line-height: 150px;
+    margin: 0;
 }
 
 .lista-home{
     line-height: 30px;
+}
+
+#ver-solucao-btn {
+    display: flex;
+    /* justify-content: flex-start; */
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    gap: 7px;
+    border: solid 1px var(--color-neon-secondary);
+    padding: 10px 15px;
+    border-radius: var(--radius-small);
+    color: var(--color-neon-secondary);
+    transition: 0.5s;
+}
+
+#ver-solucao-btn:hover{
+    background-color: var(--color-neon-secondary);
+    color: var(--color-blue-dark);
+    transform: scale(1.1);
+}
+
+.solucao {
+    padding: 0 50px;
+}
+
+.topo-solucao h4{
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+}
+
+.topo-solucao p{
+    padding: 0;
 }
 
 .col-solucao {
@@ -161,10 +195,19 @@ header {
 
 .each-col-solucao{
     /* background-color: aqua; */
-    width: 30%;
+    width: 25%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 300px;
+}
+
+.each-col-solucao h6{
+    font-size: 30px;
+    margin: 10px;
+}
+
+.each-col-solucao p{
+    padding-bottom: 30px;
 }

@@ -3,99 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100..1000&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- ICONS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
     <title>FGA Sistemas</title>
 </head>
+
 <body>
+
+    <!-- =========================================
+    HEADER
+    ========================================== -->
+
     <header>
-        <a href=""><img src="./images/ChatGPT Image 14_05_2026, 20_11_47.png" alt="Logo do Time" id="logo"></a>
+
+        <a href="#">
+            <img src="./images/logo.png" alt="Logo FGA" id="logo">
+        </a>
+
         <div class="links-header">
+
             <a href="#home" class="each-link-header">Home</a>
+
             <a href="#solucao" class="each-link-header">Solução</a>
-            <a href="" class="each-link-header">Processo</a>
-            <a href="" class="each-link-header">Resultados</a>
-            <a href="" class="each-link-header">Time</a>
-            <a href="" class="each-link-header">Contato</a>
-            <a href="" id="login-btn-header"></i>Login</a>
+
+            <a href="#publico" class="each-link-header">Público</a>
+
+            <a href="#time" class="each-link-header">Time</a>
+
+            <a href="#valor" class="each-link-header">Valor</a>
+
+            <a href="#grafico" class="each-link-header">Resultados</a>
+
+            <a href="#" id="login-btn-header">
+                Login
+            </a>
+
         </div>
+
     </header>
 
-    <!-- HOME -->
-     <div class="home" id="home">
-        <div class="txt-half">
-            <div class="home-txt">
-                <li class="lista-home">Redesenhando a experiência da</li>
-                <h1 class="h1-home">Câmera <span style="color: #7DFF4D;">Móvel</span></h1>
-                <p>Mais clareza menos cliques.</p>
-                <p>Um novo olhar para capturar o que realmente importa.</p>
-                <a href="" id="ver-solucao-btn">Ver solução</a>
-            </div>
+    <!-- =========================================
+    MODAL LOGIN
+    ========================================== -->
+
+    <div class="modal" id="modal">
+
+        <div class="modal-content">
+
+            <span class="fechar-modal" id="fecharModal">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+
+            <h2>Login</h2>
+
+            <p>Acesse sua conta</p>
+
+            <input type="email" placeholder="Seu email" id="email">
+
+            <input type="password" placeholder="Sua senha" id="senha">
+
+            <p id="mensagem-erro"></p>
+
+            <button id="entrar-btn">
+                Entrar
+            </button>
+
         </div>
 
-        <div class="img-half">
-            <div class="home-img"></div>
-        </div>
-        
     </div>
-    <!--Fin HOME -->
-    <!-- SOLUCAO -->
-     <div class="solucao" id="solucao">
+
+    <!-- =========================================
+    HOME
+    ========================================== -->
+
+    <section class="home" id="home">
+
+        <div class="home-txt">
+
+            <li class="lista-home">
+                Redesenhando a experiência da câmera mobile
+            </li>
+
+            <h1 class="h1-home">
+                Câmera <span>Móvel</span>
+            </h1>
+
+            <p class="subtitle-home">
+                Mais clareza, menos cliques.
+            </p>
+
+            <p class="desc-home">
+                Um novo conceito de interface pensado para tornar
+                a experiência fotográfica mais intuitiva, rápida
+                e moderna para qualquer usuário.
+            </p>
+
+            <div class="home-buttons">
+
+                <a href="#solucao" id="ver-solucao-btn">
+                    Ver solução
+                </a>
+
+                <a href="#time" class="secondary-btn">
+                    Nosso time
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+    SOLUÇÃO
+    ========================================== -->
+
+    <section class="solucao" id="solucao">
+
         <div class="topo-solucao">
-            <h4>Nossa <span style="color: #7DFF4D;">Solução</span></h4>
-            <!-- <p>A FGA Sistemas propõe um redesign completo do app de câmera do Jovi, centrado em clareza visual, gestos naturais e acesso imediato aos recursos mais usados.</p> -->
-             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, dolore iste a saepe cum ipsum odit nobis vitae ex similique dolorum, laborum accusantium consequuntur aut et fugit. Ipsa repellat doloribus culpa a! Commodi, officia consequatur. 
-             </p>
+
+            <h2>
+                Nossa <span style="color: #7DFF4D;">Solução</span>
+            </h2>
+
+            <p>
+                Desenvolvemos uma proposta focada em simplificar
+                a experiência da câmera mobile através de uma
+                interface moderna, limpa e intuitiva.
+            </p>
+
         </div>
+
         <div class="col-solucao">
+
             <div class="each-col-solucao">
-                <h6>Tela inicial Limpa</h6>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, tenetur.</p>
-                <img src="" alt="Celular Com função atribuida">
+
+                <h3>Interface Minimalista</h3>
+
+                <p>
+                    Redução de elementos desnecessários para priorizar
+                    foco, velocidade e clareza visual.
+                </p>
+
             </div>
+
             <div class="each-col-solucao">
-                <h6>Tela inicial Limpa</h6>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, tenetur.</p>
-                <img src="" alt="Celular Com função atribuida">
+
+                <h3>Navegação Intuitiva</h3>
+
+                <p>
+                    Organização simples dos recursos principais
+                    para facilitar o uso diário.
+                </p>
+
             </div>
+
             <div class="each-col-solucao">
-                <h6>Tela inicial Limpa</h6>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, tenetur.</p>
-                <img src="" alt="Celular Com função atribuida">
+
+                <h3>Acesso Rápido</h3>
+
+                <p>
+                    Os modos mais utilizados ficam acessíveis
+                    imediatamente sem menus complexos.
+                </p>
+
             </div>
+
         </div>
-     </div>
-    <!-- Fim SOLUCAO -->
-     <!-- Publico-Alvo -->
-      <div class="publico">
-        <div class="topo-publico">
-            <h4>Nossa <span style="color: #7DFF4D;">Solução</span></h4>
-            <!-- <p>A FGA Sistemas propõe um redesign completo do app de câmera do Jovi, centrado em clareza visual, gestos naturais e acesso imediato aos recursos mais usados.</p> -->
-             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, dolore iste a saepe cum ipsum odit nobis vitae ex similique dolorum, laborum accusantium consequuntur aut et fugit. Ipsa repellat doloribus culpa a! Commodi, officia consequatur. 
-             </p>
-        </div>
-        <div class="cards-publico">
-            <div class="each-card-publico">
-                <h6>11</h6>
-                <p>Participantes</p>
-            </div>
-            <div class="each-card-publico">
-                <h6>11</h6>
-                <p>Participantes</p>
-            </div>
-            <div class="each-card-publico">
-                <h6>11</h6>
-                <p>Participantes</p>
-            </div>
-            <div class="each-card-publico">
-                <h6>11</h6>
-                <p>Participantes</p>
-            </div>
-        </div>
-      </div>
-     <!-- Publico-Alvo -->
+
+    </section>
 </body>
 </html>
